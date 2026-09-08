@@ -64,7 +64,6 @@ nav {
     align-items: center;
     gap: 4rem;
     list-style: none;
-    margin-right: 600px;
     
     a {
         text-decoration: none;
@@ -89,7 +88,6 @@ nav {
     align-items: center;
     gap: 1.5rem;
     list-style: none;
-    margin-left: -500px;
     justify-content: space-between;
     gap: 30px;
 
@@ -100,7 +98,7 @@ nav {
     img {
         width: 70px;
         height: 30px;
-        margin-right: 60px;
+        
        
         
         
@@ -110,7 +108,7 @@ nav {
         text-decoration: none;
         color: #264065;
         font-weight: 500;
-        margin-right: 50px;
+        
         
     }
 
@@ -123,13 +121,13 @@ nav {
         font-weight: 500;
         font-size: 0.95rem;
         transition: background-color 0.2s ease;
-        margin-right: 110px;
+        
        
     
 
 
         &:hover {
-            background-color: dark(#264065, 10%);
+            background-color: black;
         }
     }
 }
@@ -157,15 +155,16 @@ h1 {
 }
 
 .hero {
-    position: center; 
-    overflow: hidden;   
+    position: relative; 
+    overflow: visible;  
+    min-height: 780px; 
 
     &__img {
         position: absolute;
-        top: 70px;
-        right: 0;           
+        top: -120px;  
+        left: 650px;        
         height: 100%;  
-        margin-right: 10px;        
+        margin-right: -20px;        
     }
 }
 
@@ -201,7 +200,7 @@ h1 {
     transition: background-color 0.2s ease;
 
     &:hover {
-        background-color: dark(#264065, 10%);
+        background-color: #264065;
     }
 }
 
@@ -228,9 +227,11 @@ h1 {
     display: flex;
     gap: 3rem;
     max-width: 650px;
-    margin-top: 1rem;
-    margin-left: 150px;
+    margin-top: -275px;
+    margin-left: 125px;
     line-height: 2.5;
+    
+
 
 }
 
@@ -241,9 +242,9 @@ h1 {
     gap: 0.75rem;
 }
 
-categories article img {
-    width: 48px;
-    height: 48px;
+.categories article img {
+    width: 72px;
+    height: 72px;
 }
 
 .categories__text {
