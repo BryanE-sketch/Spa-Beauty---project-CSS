@@ -1,0 +1,33 @@
+@use "../abstracts" as *;
+
+// Medidas tomadas de background.jpg (exportado de Figma)
+$bg-width: 1920px;  // Ancho real de la imagen
+$bg-split: 1285px;  // Píxel donde empieza el bloque verde
+
+// Distancia desde el centro de la página hasta el centro de la
+// columna derecha del hero (donde está la mujer). Con el contenedor
+// a 1240px y dos columnas iguales, es 1240px / 4 = 310px.
+$split-offset: 240px;
+
+
+// CONTENEDOR GENERAL DE LA PÁGINA
+
+.page {
+  min-height: 100vh;
+  overflow-x: clip;
+  background-color: $color-bg;
+
+  @include respond(desktop) {
+    background-image:
+      url("../../img/background.jpg"),
+      linear-gradient(
+        to right,
+        $color-bg calc(50% + $split-offset),
+        $color-accent calc(50% + $split-offset)
+      );
+    background-repeat: no-repeat;
+    background-position:
+      calc(50% - ($bg-split - $bg-width * 0.5 - $split-offset)) top,
+      0 0;
+  }
+}

@@ -3,126 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spa & beaty - project CSS</title>
+    <meta name="description" content="GlowQueen: beauty and skin care treatments from head to toe." />
+    <title>GlowQueen | Spa & Beauty</title>
   </head>
-  <body>
-    
 
+  <body>
     <div class="page">
 
+      <header class="header">
+        <a href="#" class="header__logo">
+          <img src="img/GlowQueen.png" alt="GlowQueen" width="208" height="32" />
+        </a>
 
-     <header>
-      <figure>
-        <img src="img/GlowQueen.png" alt="Logotipo" srcset="img/GlowQueen@2x.png 2x">
-        <figcaption>Logotipo de GlowQueen</figcaption>
-      </figure>
+        <nav class="nav" aria-label="Main navigation">
+          <ul class="nav__list">
+            <li><a href="#" class="nav__link">Home</a></li>
+            <li><a href="#" class="nav__link">About</a></li>
+            <li><a href="#" class="nav__link">Services</a></li>
+            <li><a href="#" class="nav__link">Facilities</a></li>
+            <li>
+              <a href="#" class="nav__link nav__link--more">
+                More
+                <img src="img/chevron-down.png" alt="" class="nav__icon" width="24" height="24" />
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-      <nav>
-        <ul class="navegacion1">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Facilities</a></li>
+        <ul class="header__actions">
           <li>
-              <a href="#" class="nav-more">
-              More
-              <img src="img/chevron-down.png" alt="" class="nav-more__icon"></a>
+            <img src="img/nav-search.png" alt="Search and shopping bag" class="header__icons" width="96" height="32" />
           </li>
+          <li><a href="#" class="header__link">Sign In</a></li>
+          <li><a href="#" class="btn btn--primary">Sign Up</a></li>
         </ul>
-      </nav>
+      </header>
 
-        <ul class="navegacion2">
-          <li><img src="img/nav-search.png" alt="Icon"></li>
-          <li><a href="#">Sing In</a></li>
-          <li><a href="#" class="btn-signup">Sing Up</a></li>
-        
-        </ul>      
-    </header>
-  
+      <main>
 
-     <section class="hero">
-      <div class="hero__content">
-          <h1>Bring back the beauty and glow of your skin</h1>
-          <p>We provide you various treatments from head to toe using the 
-           best product, advanced technology, and affordable price</p>
-      </div>
+        <section class="hero">
 
-      <div class="hero__actions">
-           <a href="#" class="btn-book">Book now</a>
-           <img src="img/play-icon.png" alt="play icon" class="play__icon"> 
-           <a href="#" class="hero__watch" aria-label="Watch promotional video">Watch video</a>
-           
-      </div>
-        <img src="img/beauty-woman.png" alt="Beauty woman" class="hero__img">
-      </section>
+          <div class="hero__content">
+            <h1 class="hero__title">Bring back the beauty and glow of your skin</h1>
+            <p class="hero__text">
+              We provide you various treatments from head to toe using the
+              best product, advanced technology, and affordable price
+            </p>
 
-     <section class="categories">
-        <article>
-          <img src="img/icon-3.png" alt="">
-          <div class="categories__text">
-            <h3>15+</h3>
-            <p>Special Treatment</p>
-          </div>
-        </article>
-        <article>
-          <img src="img/icon-4.png" alt="">
-          <div class="categories__text">
-            <h3>25+</h3>
-            <p>Professional Therapist</p>
-          </div>
-        </article>
-        <article>
-          <img src="img/icon-5.png" alt="">
-          <div class="categories__text">
-            <h3>100%</h3>
-            <p>Herbal Cream Formula</p>
-          </div>
-        </article>
-      </section>
+            <div class="hero__actions">
+              <a href="#" class="btn btn--primary btn--large">Book now</a>
+              <a href="#" class="hero__watch">
+                <img src="img/play-icon.png" alt="" class="hero__play" width="148" height="148" />
+                Watch video
+              </a>
+            </div>
 
-
-            
-
-
-          <div class="reviews">
-        <article class="review review--top">
-          <img src="img/Comillas.png" alt="">
-          <p class="review__text">I have a regular schedule to take treatment from GlowQueen, they gave me the best service and treatment ever to maintain the beauty and health of my skin</p>
-          <p class="review__author">Sophia Princeton</p>
-        </article>
-
-        <article class="review review--bottom">
-          <img src="img/Comillas.png" alt="">
-          <p class="review__text">For the past few years, I've had a hard time finding the right place for skin care to deal with my complicated skin condition, thank God I found GlowQueen to treat my skin</p>
-          <p class="review__author">Tamara Jules</p>
-        </article>
+            <ul class="categories">
+              <li class="categories__item">
+                <img src="img/icon-3.png" alt="" width="72" height="72" />
+                <p class="categories__number">15+</p>
+                <p class="categories__label">Special Treatment</p>
+              </li>
+              <li class="categories__item">
+                <img src="img/icon-4.png" alt="" width="72" height="72" />
+                <p class="categories__number">25+</p>
+                <p class="categories__label">Professional Therapist</p>
+              </li>
+              <li class="categories__item">
+                <img src="img/icon-5.png" alt="" width="72" height="72" />
+                <p class="categories__number">100%</p>
+                <p class="categories__label">Herbal Cream Formula</p>
+              </li>
+            </ul>
           </div>
 
+          
+          <div class="hero__media">
+            <img
+              src="img/beauty-woman.png"
+              alt="Woman with glowing skin"
+              class="hero__img"
+              width="1559"
+              height="1080"
+            />
 
+            <figure class="review review--top">
+              <img src="img/Comillas.png" alt="" class="review__icon" width="32" height="21" />
+              <blockquote class="review__text">
+                <p>I have a regular schedule to take treatment from GlowQueen, they gave me the best service and treatment ever to maintain the beauty and health of my skin</p>
+              </blockquote>
+              <figcaption class="review__author">Sophia Princeton</figcaption>
+            </figure>
 
+            <figure class="review review--bottom">
+              <img src="img/Comillas.png" alt="" class="review__icon" width="32" height="21" />
+              <blockquote class="review__text">
+                <p>For the past few years, I've had a hard time finding the right place for skin care to deal with my complicated skin condition, thank God I found GlowQueen to treat my skin</p>
+              </blockquote>
+              <figcaption class="review__author">Tamara Jules</figcaption>
+            </figure>
+          </div>
 
+        </section>
+      </main>
 
-
-     </section>
-    
-    
-    
-    
-    
-    
     </div>
 
-
-
-
-
-
-
-
-
-
-
-    <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

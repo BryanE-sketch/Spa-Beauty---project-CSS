@@ -1,0 +1,50 @@
+@use "../abstracts" as *;
+
+
+.nav {
+  
+  order: 3;
+  width: 100%;
+  overflow-x: auto;
+
+  @include respond(desktop) {
+    order: 0;
+    width: auto;
+    overflow-x: visible;
+  }
+
+  &__list {
+    @extend %list-reset;
+    display: flex;
+    align-items: center;
+    gap: rem(20px);
+
+    @include respond(laptop) {
+      gap: rem(48px);
+    }
+  }
+
+  &__link {
+    @extend %link-reset;
+    display: flex;
+    align-items: center;
+    gap: rem(4px);
+    color: $color-primary;
+    font-size: rem(14px);
+    font-weight: $fw-medium;
+    white-space: nowrap;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+
+    @include respond(laptop) {
+      font-size: rem(16px);
+    }
+  }
+
+  &__icon {
+    width: rem(20px);
+  }
+}
