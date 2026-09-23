@@ -150,6 +150,7 @@
   border-radius: $radius-card;
   background-color: $color-card;
   box-shadow: $shadow-card;
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
 
   
